@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Platform for Project Creation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="jumbotron" >
+<h1 class="text-center">Basecamp 2 Setup</h1></div>
+<p class="text-center">First Connect to a Basecamp Account</p>
+
+<p class="text-center">
+  <button id="btnConnect" type="button" class="btn btn-primary btn-lg">Connect To an Account</button>
+
+</p>
+<script>
+
+     document.getElementById("btnConnect").onclick = function () {
+        location.href = "https://launchpad.37signals.com/authorization/new?client_id=596fdcc153318b174ba7b09369c36cf33d1b45d1&redirect_uri=http%3A%2F%2Flocalhost%3A80%2FITProjectApp%2FdirectPage.html&type=web_server";
+    
+    };
+
+  
+    
+</script>
+
+</body>
+</html>

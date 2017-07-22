@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>   
+    <div class="jumbotron" >
+<h1 class="text-center">Upload a file in basecamp and Trigger upload to Google Drive</h1></div>
+
+<select id="projects">
+</select>
+
+<a href="http://localhost:9090/basecamp/"></a>
+<button type="uploadButton" class="btn btn-primary btn-lg">Upload</button>
+<script src='js/jquery.js'></script>
+<script src='js/plugins.js'></script>
+<script src='js/scripts.js'></script>
+<script src='js/masonry.pkgd.min.js'></script>
+<script>
+    $(document).ready(function()
+{
+     var projects = $.getJSON("http://localhost:9090/basecamp/projects");
+     alert(projects);
+       for (var i = 0; i < projects.length; i++) {
+             listItems += "<option value='" + projects.id + "'>" + jsonData.Table[i].statename + "</option>";
+         }
+})
+</script>
+</body>
+</html>

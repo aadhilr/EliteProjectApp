@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Basecamp, Google Drive and Github Integration using Ballerina</title>
+<link rel='stylesheet' href='css/woocommerce-layout.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)'/>
+<link rel='stylesheet' href='css/woocommerce.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='style.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:400,500,700%7CRoboto:400,500,700%7CHerr+Von+Muellerhoff:400,500,700%7CQuattrocento+Sans:400,500,700' type='text/css' media='all'/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>   
+    <div class="jumbotron" >
+<h1 class="text-center">Create A new Project in Basecamp</h1></div>
+<p class="text-center">
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="exampleInputName1" class="col-sm-2 control-label">Project Name</label>
+     <div class="col-sm-10">
+    <input type="text" class="form-control" id="inputName" placeholder="Test Project">
+     </div>
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="exampleInputName2" class="col-sm-2 control-label">Project Description</label>
+    <div class="col-sm-10">
+    <input type="text" class="form-control" id="inputDescription" placeholder="Enter Description" >
+    </div>
+  </div>
+  <div class="col-sm-offset-2 col-sm-10">
+<button type="submit" class="btn btn-primary btn-lg" onclick="createProject()" >Create Project</button>
+  </div>
+</form>
+</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<script>
+    function createProject(){
+    var proName = document.getElementById('inputName').value;
+    var proDescription  = document.getElementById('inputDescription').value;
+
+    
+    }
+</script>
+</body>
+</html>
